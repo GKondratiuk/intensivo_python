@@ -1,14 +1,4 @@
-'''
-• 4-7. Treses: Haga una lista de los múltiplos de 3 comprendidos entre el 3 y
-el 30. Use un bucle for para imprimir los números de la lista.
-• 4-8. Cubos: Un número elevado a la tercera potencia es un cubo. Por
-ejemplo, el cubo de 2 se escribe como 2**3 en Python. Haga una lista de los
-10 primeros cubos (es decir, el cubo de cada entero entre 1 y 10) y use un
-bucle for para imprimir el valor de cada cubo.
-• 4-9. Comprensión de cubos: Use una lista por comprensión de los 10
-primeros cubos.
 
-'''
 
 #4-3. Contar hasta veinte: Use un bucle for para imprimir los números del
 #1 al 20, ambos incluidos.
@@ -47,3 +37,39 @@ print(f'El maximo es: {max(suma_millon)}')
 #• 4-6. Números impares: Use el tercer argumento de la función range()
 #para hacer una lista de los números impares comprendidos entre 1 y 20.
 #Utilice un bucle for para imprimir cada número.
+print('\n Impares')
+
+impares = []
+
+for valor in range(1,21,2):
+    impares.append(valor)
+    
+print(impares)
+
+#• 4-7. Treses: Haga una lista de los múltiplos de 3 comprendidos entre el 3 y
+#el 30. Use un bucle for para imprimir los números de la lista.
+print('\n Multiplos')
+
+multiplos = [valor*3 for valor in range(3,31)]
+print(multiplos)
+
+#• 4-8. Cubos: Un número elevado a la tercera potencia es un cubo. Por
+#ejemplo, el cubo de 2 se escribe como 2**3 en Python. Haga una lista de los
+#10 primeros cubos (es decir, el cubo de cada entero entre 1 y 10) y use un
+#bucle for para imprimir el valor de cada cubo.
+
+print('\n Cubos')
+cubos = []
+for valor in range(1,11):
+    elevado = valor**3
+    cubos.append(elevado)
+print(cubos)
+
+'''
+• 4-9. Comprensión de cubos: Use una lista por comprensión de los 10
+primeros cubos.
+'''
+
+print('\n Cubos Bis')
+cubos_bis = [valor**3 for valor in range(1,11)]
+print(cubos_bis)
