@@ -23,3 +23,24 @@ los valores de una tupla tambien se pueden pasar con un bucle for
 print('\n bucle for')
 for dimension in dimensiones:
     print(dimension)
+    
+'''
+Aunque no se puede modificar una tupla, sí se puede asignar un
+nuevo valor a una variable que representa una tupla.
+'''
+
+dimensiones = (200,50)
+print('\n Dimensiones Originales: ')
+for dimension in dimensiones:
+    print(dimension)
+    
+dimensiones = (400,100)
+print('\n Dimensiones modificadas')
+for dimension in dimensiones:
+    print(dimension) #No da error porque reasignar el valor de una variable es valido 
+    
+'''
+En comparación con las listas, las tuplas son estructuras de datos
+simples. Utilícelas cuando quiera guardar un conjunto de valores que
+no deberían cambiar durante la vida de un programa.
+'''
