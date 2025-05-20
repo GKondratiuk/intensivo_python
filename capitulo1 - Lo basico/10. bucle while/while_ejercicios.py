@@ -45,6 +45,8 @@ while bandera == True:
 #• Use una sentencia break para salir del bucle cuando el usuario
 #introduzca el valor 'quit'.
 
+
+
 '''
 • 7-7. Infinidad: Escriba un bucle que no termine nunca y ejecútelo. (Para
 detenerlo, pulse Control-C o cierre la ventana que muestra la salida).
