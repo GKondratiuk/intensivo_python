@@ -40,3 +40,20 @@ describir_animal(nombre='esteban',animal='gato') #palabras claves
 
 print('\n LLAMADAS A FUNCIONES EQUIVALENTES')
 
+'''
+a menudo tendrá varias formas equivalentes de llamar a una función.
+Considere la siguiente definición para describe_pet() con un valor
+predeterminado:
+def describe_pet(pet_name, animal_type='dog'):
+
+# Un perro llamado Willie.
+describe_pet('willie')
+describe_pet(pet_name='willie')
+# Un hámster llamado Harry.
+describe_pet('harry', 'hamster')
+describe_pet(pet_name='harry', animal_type='hamster')
+describe_pet(animal_type='hamster', pet_name='harry')
+'''
+
+
+    
