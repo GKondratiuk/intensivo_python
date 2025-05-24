@@ -1,10 +1,4 @@
-'''
-• 8-8. Álbumes de usuarios: Empiece con el programa del ejercicio 8-7.
-Escriba un bucle while que permita a los usuarios introducir el artista y el
-título de un álbum. Una vez que disponga de esa información, llame a
-hacer_album() con la entrada de usuario e imprima el diccionario que se ha
-creado. Asegúrese de incluir un valor para salir en el bucle while.
-'''
+
 #• 8-6. Nombres de ciudad: Escriba una función llamada ciudad_pais()
 #que admita el nombre de una ciudad y su país. La función debería devolver
 #una cadena con formato, similar a esta:
@@ -34,5 +28,33 @@ incluya este dato.
 
 print('\nALBUM: ')
 
-def hacer_album():
-    banda = {}
+def hacer_album(artist,album,tracks=None):
+    banda = {'artist':artist,'album':album}
+    if banda == tracks:
+        banda['tracks'] = tracks
+        return banda
+    
+    return banda
+
+banda = hacer_album('Nirvana','Nevermind')
+print(banda)
+
+banda2 = hacer_album('La Renga','Oscuro Diamante',13)
+print(banda2)
+
+'''
+• 8-8. Álbumes de usuarios: Empiece con el programa del ejercicio 8-7.
+Escriba un bucle while que permita a los usuarios introducir el artista y el
+título de un álbum. Una vez que disponga de esa información, llame a
+hacer_album() con la entrada de usuario e imprima el diccionario que se ha
+creado. Asegúrese de incluir un valor para salir en el bucle while.
+'''
+
+def nueva_banda(nombre,album,track=None):
+    banda = {'nombre':nombre,'album':album}
+    while True:
+        nombre = input('Decime el nombre de la banda ')
+        album = input('Ahora decime el album ')
+        banda = nombre,album
+        return banda
+    
