@@ -1,0 +1,6 @@
+en python se pude realizar bucles while
+en python se puede realizar bucles for
+en python se puede utilizar sentencias if
+en python se pueden realizar variables
+en python se pueden utilizar diccionarios
+en python se puede utilizar listas 
