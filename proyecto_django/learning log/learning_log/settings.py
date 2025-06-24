@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 #aqui colocaremos la app learning_logs (es la carpeta que creamos aparte)
 INSTALLED_APPS = [
-    'learning_logs',
+    'learning_logs',#agregamos nuestra app
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
