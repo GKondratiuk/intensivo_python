@@ -1,5 +1,5 @@
 from django.db import models
-# Create your models here.
+# Create your models here. Nos dicen Que datos se van a guardar y Como van a estar organizados
 #creamos una clase topic que hereda de models
 class Topic(models.Model): #un tema sobre lo que esta aprendiendo el usuario
     text = models.CharField(max_length=200) #atributo text - crea caja de texto
