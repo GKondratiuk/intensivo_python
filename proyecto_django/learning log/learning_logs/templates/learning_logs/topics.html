@@ -1,0 +1,18 @@
+{% extends 'learning_logs/base.html'%}
+
+{%block content%} 
+<h1>Topics</h1>
+<ul>
+    {%for topic in topics %}
+    <li>{{topic}}</li>
+    {%empty%}
+    <li>No topics have been added yet.</li>
+    {%endfor%}
+</ul>
+{%endblock content%}
+
+<p>Utilizamos extends para extenders de base.html
+    abrimos un for each que va a ir pasando por la lista context
+    empty le indica django que si no hay mas elementos en la lista: imprimir lo siguiente...
+    hay que cerrar el bucle for
+</p>
