@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'pizzas',
+    'pizzas', #conectamos la app al proyecto
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
