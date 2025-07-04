@@ -1,10 +1,11 @@
 <p>
     <a href="{%url 'learning_logs:index'%}">Learning Log</a>
-    <a href="{%url 'learning_logs:topics'%}">Topics</a>    
+    <a href="{%url 'learning_logs:topics'%}">Topics</a>  
+    <a href="{%url 'learning_logs:topic'%}">Topic</a> 
 </p>
 
 
 
 {%block content%}
-<p> este archivo contiene elementos comunes a todas las paginas, todas las plantillas heredaran de este archivo</p>
+<p> plantilla padre. este archivo esta en base.html. contiene elementos comunes a todas las paginas, todas las plantillas heredaran de este archivo</p>
 {%endblock content%}

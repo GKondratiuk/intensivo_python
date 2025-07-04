@@ -13,6 +13,12 @@ def topics(request):#topics necesita el parametro request que recibe del servido
     context = {'topics':topics}#definimos de que manera mostraremos la informacion
     return render(request, 'learning_logs/topics.html',context) #retornamos
 
+def topic(request,topic_id):
+    #muetra un tema concreto y todas sus entradas 
+    topic = Topic.objects.get(id=topic_id)#de todos los objetos de topic dame la id
+    entries = topic.entry_set.order_by('-date_added') #ordenar las entradas por fecha
+    context = {'topic':topic,'entries':entries}
+    return render(request, 'learing_logs/topic.html',context) #devolvemos
 
 '''
 Este es el paso 2 desde aqui renderizamos, creamos las vistas y creamos la carpeta templates desde la app.
