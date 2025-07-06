@@ -1,5 +1,13 @@
+{% extends 'layouts/base.html' %}
+
+<!-- Si hereda, todo el contenido tiene que ir en block content, sino no se ve-->
+
+{% block content %}
+
 <h1>
-    Welcome to Django App
+    {{title}}
 </h1>
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ex itaque, eos aperiam voluptatum, similique exercitationem sunt iste veniam voluptatibus repudiandae voluptates maxime culpa pariatur earum dolorum esse non iure.</p>
+
+{% endblock %}

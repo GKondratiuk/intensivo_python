@@ -1,4 +1,4 @@
-#!/home/guille/django_projects/venv/bin/python3
+#!/home/guille/Escritorio/intensivo_python/django_projects/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
