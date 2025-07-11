@@ -1,0 +1,12 @@
+{%extends 'layouts/base.html'%}
+
+{% block content %}
+<h1>Create a new task</h1>
+
+<form method="POST"> <!-- metodo post para guardar lo que se agregue en base de datos-->
+    {% csrf_token %}
+    {{form.as_p}} <!--escribe el formulario entre llaves de parrafo-->
+    <button>Save</button>
+</form>
+
+{% endblock %}
