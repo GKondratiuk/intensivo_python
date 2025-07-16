@@ -1,4 +1,15 @@
-<nav>
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Projects</title>
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+</head>
+<body>
+    <nav class="navbar container">
     <ul>
         <li>
             <a href="/">Home</a>
@@ -21,9 +32,16 @@
     </ul>
 </nav>
 
-{% block content %}
-{% endblock %}
+<main class="container">
+
+    {% block content %}
+    {% endblock %}
+
+</main>
 
 <!--Esto es un comentario
 todas las paginas heredan de base-->
 
+
+</body>
+</html>

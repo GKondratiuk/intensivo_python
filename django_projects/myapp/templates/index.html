@@ -1,5 +1,7 @@
 {% extends 'layouts/base.html' %}
 
+{% load static %} <!--carga las imagenes-->
+
 <!-- Si hereda, todo el contenido tiene que ir en block content, sino no se ve-->
 
 {% block content %}
@@ -7,6 +9,8 @@
 <h1>
     {{title}}
 </h1>
+
+<img src="{% static 'g.jpg' %}" alt="" width="70">
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ex itaque, eos aperiam voluptatum, similique exercitationem sunt iste veniam voluptatibus repudiandae voluptates maxime culpa pariatur earum dolorum esse non iure.</p>
 
